@@ -10,15 +10,6 @@ var questions = [
         ]
     },
     { 
-        question: "Which of the following function of Array object calls a function for each element in the array?", 
-        answers: [
-            { text: "concat()", correct: false },
-            { text: "filter()", correct: false },
-            { text: "forEach()", correct: true },
-            { text: "split()", correct: false }
-        ]
-    },
-    { 
         question: "How to write an IF statement for executing some code if 'i' is NOT equal to 8?", 
         answers: [
             { text: "if (i != 8)", correct: true },
@@ -27,6 +18,16 @@ var questions = [
             { text: "if (i !=== 8)", correct: false }
         ]
     },
+    { 
+        question: "Which of the following function of Array object calls a function for each element in the array?", 
+        answers: [
+            { text: "concat()", correct: false },
+            { text: "filter()", correct: false },
+            { text: "forEach()", correct: true },
+            { text: "split()", correct: false }
+        ]
+    },
+
     { 
         question: "What is the correct way to write a JavaScript array?", 
         answers: [

@@ -4,18 +4,19 @@ var timerID;
 var timerEl = document.getElementById("timer");
 var startButton = document.getElementById("start-btn");
 var nextButton = document.getElementById("next-btn");
+var checkAnswerEl = document.getElementById("check-answer");
+var viewHighScores = document.getElementById("highscores-link");
 var questionContainerEl = document.getElementById("question-container");
 var startContainerEl = document.getElementById("start-container");
 var questionEl = document.getElementById("question");
-var answerButtonsEl = document.getElementById("answer-buttons");
-var checkAnswerEl = document.getElementById("check-answer");
-var viewHighScores = document.getElementById("highscores-link");
-var submitButton = document.getElementById("submit-btn");
-var clearScoreButton = document.getElementById("clear-btn");
 var initialsField = document.getElementById("player-name");
 var restartButton = document.getElementById("restart-btn");
 var scoreField = document.getElementById("player-score");
 var scores = JSON.parse(localStorage.getItem("scores")) || [];
+var answerButtonsEl = document.getElementById("answer-buttons");
+var submitButton = document.getElementById("submit-btn");
+var clearScoreButton = document.getElementById("clear-btn");
+
 
 var shuffledQuestions, currentQuestionIndex;
 
@@ -71,19 +72,6 @@ function showQuestion(question) {
     })
 };
 
-
-// Reset state function
-function resetState() {
-    //clearStatusClass(document.body)
-    nextButton.classList.add("hide")
-    checkAnswerEl.classList.add("hide")
-    while (answerButtonsEl.firstChild) {
-        answerButtonsEl.removeChild
-            (answerButtonsEl.firstChild)
-    }
-};
-
-
 // Select answer function
 function selectAnswer(e) {
     var selectedButton = e.target;
@@ -116,6 +104,16 @@ function selectAnswer(e) {
     }
 };
 
+// Reset state function
+function resetState() {
+    //clearStatusClass(document.body)
+    nextButton.classList.add("hide")
+    checkAnswerEl.classList.add("hide")
+    while (answerButtonsEl.firstChild) {
+        answerButtonsEl.removeChild
+            (answerButtonsEl.firstChild)
+    }
+};
 
 // Check and show the correct answer by set the buttons colors
 function setStatusClass(element, correct) {
