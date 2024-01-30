@@ -132,6 +132,8 @@ button:hover {
   background-color: darkgreen;
 }
 
+
+
 /* Wrapper for buttons */
 .controls {
   display: flex;

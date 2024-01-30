@@ -1,4 +1,4 @@
-// This is the question funstions that contain questions and the answers. They are in multidimensional array with inner array elements
+// This is the question funstions that contain questions and the answers.
 var questions = [
     { 
         question: "How do you write 'Hello World' in an alert box?", 
