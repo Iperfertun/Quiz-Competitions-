@@ -25,24 +25,26 @@
   </head>
 
   <body>
-    <div class="scores">
-        <a href="highscores.html">View Highscores</a>
-    </div>
-    
-
-    <div class="timer">Time: 75 <span id="time">
-        </span></div>
- 
-    <div class="wrapper">
-      <div id="start-screen" class="start-quiz">
-        <h1> Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within 75 secs. 
-          Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
-        </p>
-        <button id="start">Start Quiz</button>
+    <header>
+      <div class="scores">
+          <a id="highscores-link">View high scores</a>
       </div>
+      <div id="timer" class="timer">
+          Time: 75
+      </div>
+  </header>
+
+  <section id="start-container" class="start-quiz">
+      <h1>Welcome to JavaScript Quiz Challenge</h1>
+      <p>
+        Try to answer the following code-related questions within 75 secs. 
+        Keep in mind that incorrect answers will penalize your
+        score/time by ten seconds!
+      </p>
+      <div class="controls">
+          <button id="start-btn" class="start-btn">Start Quiz</button>
+      </div>
+  </section>
 
       <section id="question-container" class="hide">
         <h1 id="question">Question</h1>
@@ -109,5 +111,6 @@
     <script src="assets/js/questions.js"></script>
     <script src="https://kit.fontawesome.com/a9b8e78823.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    
   </body>
 </html>
